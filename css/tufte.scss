@@ -209,10 +209,51 @@ section { padding-top: 1rem;
           padding-bottom: 1rem; }
 
 
-ul,ol { width: 45%;
+ol { width: 45%;
      -webkit-padding-start: 5%;
      -webkit-padding-end: 5%;
-     list-style-type: none; }
+     list-style-type: lower-roman; }
+
+ul { width: 45%;
+     -webkit-padding-start: 5%;
+     -webkit-padding-end: 5%;
+     list-style-type: square; }
+
+ul {
+    list-style: none; /* Remove list bullets */
+    //list-style-image: url('/assets/img/pkgeo.jpg')
+    padding: 0;
+    margin: 0;
+}
+
+ul li { 
+    padding-left: 16px; 
+}
+
+ul li:before {
+    content: "🌐"; /* Insert content that looks like bullets */
+    font-size: 60%;
+    padding-right: 8px;
+    color: red; /* Or a color you prefer */
+}
+
+ul.content-listing li { 
+    padding-left: 0px; 
+}
+
+ul.content-listing li:before {
+    content: ""; /* Insert content that looks like bullets */
+    padding-right: 0px;
+}
+
+ul.footer-links li { 
+    padding-left: 0px; 
+}
+
+ul.footer-links li:before {
+    content: ""; /* Insert content that looks like bullets */
+    padding-right: 0px;
+}
 
 //li { padding: 0.5em 0; } //vertical padding on list items screws up vertical rhythym
 
