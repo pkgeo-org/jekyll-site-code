@@ -209,32 +209,9 @@ section { padding-top: 1rem;
           padding-bottom: 1rem; }
 
 
-ol { width: 45%;
+ul,ol { width: 45%;
      -webkit-padding-start: 5%;
      -webkit-padding-end: 5%;
-     list-style-type: lower-roman; }
-
-ul { width: 45%;
-     -webkit-padding-start: 5%;
-     -webkit-padding-end: 5%;
-     list-style-type: square; }
-
-ul {
-    list-style: none; /* Remove list bullets */
-    //list-style-image: url('/assets/img/pkgeo.jpg')
-    padding: 0;
-    margin: 0;
-}
-
-ul li { 
-    padding-left: 16px; 
-}
-
-ul li:before {
-    content: "🌐"; /* Insert content that looks like bullets */
-    font-size: 60%;
-    padding-right: 8px;
-    color: red; /* Or a color you prefer */
 }
 
 ul.content-listing li { 
